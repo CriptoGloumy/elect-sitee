@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ElectDrawing - Main</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="portfolio/css/style.css">
+</head>
+<body>
+<header>
+	<nav class="navbar navbar-expand-lg navbar-light">
+	  <div class="container">
+	    <a class="navbar-brand" href="#" style="color: #197824;">ELECT</a>
+	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+	    <div class="collapse navbar-collapse" id="navbarNav">
+	      <ul class="navbar-nav m-auto text-center">
+	        <li class="nav-item">
+	          <a class="nav-link" href="index.html">Главная</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link" href="shop.html" id="map" >Магазин</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link" href="help.html">Помощь</a>
+	        </li>
+			<li class="nav-item">
+				<a class="nav-link active" aria-current="page" style="color: #197824;" href="portfolio.html">Портфолио</a>
+			</li>
+	      </ul>
+	    </div>
+	  </div>
+	</nav>	
+</header>
+<section class="hero-section">
+	<h1>В разработке...</h1>
+</section>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script>
+	window.transitionToPage = function(href) {
+	    document.querySelector('body').style.opacity = 0
+	    setTimeout(function() { 
+	        window.location.href = href
+	    }, 500)
+	}
+	
+	document.addEventListener('DOMContentLoaded', function(event) {
+	    document.querySelector('body').style.opacity = 1
+	})
+</script>
+</body>
+</html>
